@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memória RAM e ROM</title>
+  <link rel="stylesheet" href="/RamRom/RamRom.css" />
+  <script src="/RamRom/RamRom.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>📚 Memória RAM e ROM</h1>
+    <p>Compreenda as diferenças, funções, tipos e aplicações dessas duas memórias fundamentais nos sistemas computacionais.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>⚡ O que é a Memória RAM?</h2>
+      <img src="/RamRom/img/ChatGPT Image 26_06_2025, 14_28_16.png" class="card-img" alt="Exemplo de memória RAM">
+      <p>A <strong>RAM (Random Access Memory)</strong> é a memória de acesso aleatório usada para armazenar dados e instruções que estão sendo processados no momento. É considerada volátil porque perde seu conteúdo ao desligar o dispositivo.</p>
+      <p>É responsável por fornecer acesso rápido aos dados temporários necessários para a execução dos programas e do sistema operacional.</p>
+    </section>
+
+    <section class="card">
+      <h2>🧠 Características da RAM</h2>
+      <ul>
+        <li><strong>Volátil:</strong> Os dados armazenados são perdidos quando o computador é desligado.</li>
+        <li><strong>Alta velocidade:</strong> Muito mais rápida que discos rígidos ou SSDs tradicionais.</li>
+        <li><strong>Acesso aleatório:</strong> Permite acesso direto a qualquer posição de memória, otimizando a performance.</li>
+        <li><strong>Capacidade crescente:</strong> Disponível em capacidades variadas (4GB, 8GB, 16GB, 32GB, etc.).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>🛠️ Tipos e Funções da RAM</h2>
+      <ul>
+        <li><strong>DRAM (Dynamic RAM):</strong> Mais barata e comum, necessita de atualização constante dos dados.</li>
+        <li><strong>SRAM (Static RAM):</strong> Mais rápida e cara, usada em memória cache de CPU.</li>
+        <li><strong>DDR (Double Data Rate):</strong> Evoluiu de DDR1 até DDR5, com maior largura de banda e menor consumo de energia.</li>
+        <li><strong>Função geral:</strong> Armazena dados temporários de aplicativos, drivers e do próprio sistema operativo.</li>
+        <li><strong>Memória Virtual:</strong> Quando a RAM está cheia, o sistema usa parte do disco para funcionar como RAM (mais lenta).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>🔒 O que é a Memória ROM?</h2>
+      <img src="/RamRom/img/ChatGPT Image 26_06_2025, 14_28_43.png" class="card-img" alt="Exemplo de memória ROM">
+      <p>A <strong>ROM (Read-Only Memory)</strong> é uma memória não volátil que armazena dados permanentes e essenciais para a inicialização do sistema, como o firmware da BIOS.</p>
+      <p>Os dados nela armazenados geralmente não podem ser alterados (ou são difíceis de reprogramar), garantindo maior segurança na integridade das instruções de arranque.</p>
+    </section>
+
+    <section class="card">
+      <h2>📌 Características e Funções da ROM</h2>
+      <ul>
+        <li><strong>Não volátil:</strong> Mantém os dados gravados mesmo sem energia elétrica.</li>
+        <li><strong>Somente leitura:</strong> Originalmente não permite alterações, exceto em versões específicas (EPROM, EEPROM).</li>
+        <li><strong>Função:</strong> Armazena o firmware que inicia o sistema operacional (como BIOS/UEFI), e instruções fundamentais do hardware.</li>
+        <li><strong>Robustez:</strong> Ideal para dados que não devem ser modificados com frequência.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>📚 Tipos de ROM</h2>
+      <ul>
+        <li><strong>PROM (Programmable ROM):</strong> Pode ser programada uma única vez após a fabricação.</li>
+        <li><strong>EPROM (Erasable PROM):</strong> Pode ser apagada com luz ultravioleta e reprogramada.</li>
+        <li><strong>EEPROM (Electrically EPROM):</strong> Apagável e reprogramável eletricamente, usada em BIOS modernas.</li>
+        <li><strong>Flash Memory:</strong> Uma forma de EEPROM usada em SSDs, pendrives, cartões SD e firmwares de dispositivos modernos.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>🆚 Comparação RAM vs ROM</h2>
+      <table>
+        <thead>
+          <tr><th>Característica</th><th>RAM</th><th>ROM</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Volatilidade</td><td>Volátil (dados apagados ao desligar)</td><td>Não volátil (dados permanentes)</td></tr>
+          <tr><td>Velocidade</td><td>Muito rápida</td><td>Lenta em comparação</td></tr>
+          <tr><td>Utilização</td><td>Armazena dados em uso</td><td>Armazena firmware/instruções fixas</td></tr>
+          <tr><td>Editável?</td><td>Totalmente editável</td><td>Geralmente não editável</td></tr>
+          <tr><td>Exemplos</td><td>Programas em execução, cache</td><td>BIOS, firmware de impressoras</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>💡 Como trabalham juntas?</h2>
+      <ul>
+        <li>Ao ligar o computador, a <strong>ROM</strong> executa as instruções básicas para iniciar o sistema.</li>
+        <li>Em seguida, o sistema operacional é carregado na <strong>RAM</strong>, onde os dados temporários serão manipulados rapidamente.</li>
+        <li>Ambas são essenciais: a ROM permite que o sistema arranque, e a RAM garante performance e fluidez na execução.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://tse3.mm.bing.net/th?id=OIP.h_0M6uT4vhCAFBiTYtwvzAHaE7&pid=Api&P=0&h=220') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: cyan;
+  text-shadow: 2px 2px 8px black;
+}
+
+header p {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid cyan;
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  animation: slideUp 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4);
+}
+
+.card h2 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.card p, .card li {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.card ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+.card-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  background: white;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+th, td {
+  border: 1px solid #00c8ff;
+  padding: 0.8rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+th {
+  background-color: #00c8ff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

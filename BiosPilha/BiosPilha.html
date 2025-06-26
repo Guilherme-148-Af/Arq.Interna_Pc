@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Função da BIOS e da Pilha</title>
+  <link rel="stylesheet" href="/BiosPilha/BiosPilha.css" />
+  <script src="/BiosPilha/BiosPilha.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Função da BIOS e da Pilha da Placa-Mãe</h1>
+    <p>Entenda os conceitos fundamentais que permitem o funcionamento correto do seu computador</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>🧠 O que é a BIOS?</h2>
+      <p>A <strong>BIOS</strong> (Basic Input/Output System) é um pequeno software armazenado em um chip da placa-mãe. Ela é executada assim que você liga o computador, antes mesmo do sistema operacional começar a carregar.</p>
+      <p>Ela prepara o hardware para que o sistema possa funcionar corretamente, funcionando como uma ponte entre os componentes físicos do computador e o sistema operativo.</p>
+    </section>
+
+    <section class="card">
+      <h2>🔧 Funções principais da BIOS</h2>
+      <ul>
+        <li><strong>POST (Power-On Self Test):</strong> Teste automático para verificar se o hardware (memória RAM, processador, teclado, etc.) está funcional.</li>
+        <li><strong>Inicialização do hardware:</strong> Reconhece, testa e configura os dispositivos conectados.</li>
+        <li><strong>Localização do disco de boot:</strong> A BIOS verifica onde está instalado o sistema operacional e inicia seu carregamento.</li>
+        <li><strong>Configuração do sistema:</strong> Possibilita ajustar manualmente parâmetros como data, hora, ordem de boot, frequências, etc.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>📥 Como acessar a BIOS?</h2>
+      <p>Durante os primeiros segundos após ligar o computador, você pode acessar a BIOS pressionando uma tecla específica, como:</p>
+      <ul>
+        <li>F2 (comum em notebooks)</li>
+        <li>Del (Delete, comum em PCs)</li>
+        <li>Esc</li>
+        <li>F10</li>
+      </ul>
+      <p>A BIOS geralmente apresenta uma interface textual, mas nas versões modernas (UEFI) pode haver menus com mouse.</p>
+    </section>
+
+    <section class="card">
+      <h2>📊 BIOS vs UEFI</h2>
+      <p>A UEFI é uma evolução da BIOS tradicional. Suas principais vantagens são:</p>
+      <ul>
+        <li><strong>Interface gráfica:</strong> Mais amigável e com suporte ao uso do mouse.</li>
+        <li><strong>Segurança:</strong> Suporte a boot seguro (Secure Boot), que evita a inicialização de softwares maliciosos.</li>
+        <li><strong>Discos grandes:</strong> Suporte a discos com mais de 2TB usando partições GPT.</li>
+        <li><strong>Inicialização rápida:</strong> Processos otimizados e mais velozes.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>⚙️ Recursos avançados da BIOS</h2>
+      <ul>
+        <li><strong>Overclocking:</strong> Aumentar a velocidade do processador ou da RAM manualmente.</li>
+        <li><strong>Monitoramento:</strong> Ver temperatura, tensão e velocidade de ventoinhas.</li>
+        <li><strong>Configurações de energia:</strong> Controlar o modo de economia e inicialização automática.</li>
+        <li><strong>Segurança:</strong> Definir senhas para acesso à BIOS e ao disco rígido.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Importância da BIOS</h2>
+      <p>A BIOS é essencial para o arranque do sistema. Sem ela, o computador não consegue identificar nem ativar os componentes físicos, impedindo qualquer uso.</p>
+      <p>Ela também garante que o sistema inicie com os dispositivos corretos e na ordem desejada.</p>
+    </section>
+
+    <section class="card">
+      <h2>🔋 O que é a pilha da placa-mãe?</h2>
+      <p>É uma pequena bateria (geralmente CR2032) responsável por manter ativas as configurações do BIOS, mesmo quando o computador está desligado e sem energia elétrica.</p>
+    </section>
+
+    <section class="card">
+      <h2>Funções da pilha</h2>
+      <ul>
+        <li><strong>Preservar configurações:</strong> Ordem de boot, senhas, ativação de hardware, etc.</li>
+        <li><strong>Manter a hora e data:</strong> O relógio do sistema interno continua contando o tempo corretamente.</li>
+        <li><strong>Evitar erros de inicialização:</strong> Sem ela, o computador mostrará mensagens como "CMOS checksum error".</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Quando substituir a pilha?</h2>
+      <p>Ela dura entre 3 a 5 anos. Sinais de que está fraca:</p>
+      <ul>
+        <li>Relógio e data reiniciam a cada desligamento.</li>
+        <li>Mensagens de erro durante a inicialização.</li>
+        <li>Configurações da BIOS se perdem ao desligar o computador.</li>
+      </ul>
+      <p>A substituição é simples: desligue o computador, retire a pilha com cuidado e insira uma nova, com o lado "+" para cima.</p>
+    </section>
+
+    <section class="card">
+      <h2>Se a pilha estiver descarregada...</h2>
+      <ul>
+        <li>O sistema ainda liga, mas sempre perde as configurações da BIOS.</li>
+        <li>A data e a hora voltarão para o padrão (como 01/01/2000).</li>
+        <li>Alguns programas, como navegadores e certificados de segurança, podem falhar.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

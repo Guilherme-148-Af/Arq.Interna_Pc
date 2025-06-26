@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://img.freepik.com/vetores-gratis/padrao-sem-emenda-escuro-de-luxo_1048-10342.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Overlay escuro para legibilidade */
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.548); /* Escurece o fundo */
+  z-index: -1;
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 1000px;
+}
+
+header h1 {
+  font-size: 3.2rem;
+  color: #00ffff;
+}
+
+header p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #b3e5fc;
+  line-height: 1.6;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 8px solid #00ffff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 500px;
+  min-height: 280px;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 24px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 255, 255, 0.3);
+}
+
+.card h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  color: #00e5ff;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #e0f7fa;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.card button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.6rem;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+}
+
+.card button:hover {
+  background-color: #0097a7;
+}
