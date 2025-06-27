@@ -3,3 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Página carregada com sucesso!");
 });
+
+function voltarParaInicio() {
+  window.location.href = "/index.html"; // Caminho absoluto ou "../index.html" se estiver numa subpasta
+}
